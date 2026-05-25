@@ -2,20 +2,6 @@
 
 Professional portfolio website for Mustafa Hasan, an Applied Cybersecurity and Information Technology student focused on cybersecurity, IT operations, programming, cloud fundamentals, and automation.
 
-## Live Website
-
-Add your live GitHub Pages link here after publishing:
-
-```text
-https://mhasaniit.github.io/REPOSITORY-NAME/
-```
-
-If you name the repository `mhasaniit.github.io`, the live link will be:
-
-```text
-https://mhasaniit.github.io/
-```
-
 ## Features
 
 - Responsive portfolio layout for desktop and mobile
