@@ -1,9 +1,7 @@
 # Mustafa Hasan Portfolio
 
 Professional portfolio website for Mustafa Hasan, an Applied Cybersecurity and Information Technology student focused on cybersecurity, IT operations, programming, cloud fundamentals, and automation.
-
 ## Features
-
 - Responsive portfolio layout for desktop and mobile
 - Professional headshot and personal branding
 - About, Resume, Skills, Projects, and Contact sections
@@ -12,22 +10,10 @@ Professional portfolio website for Mustafa Hasan, an Applied Cybersecurity and I
 - Expandable resume entries
 - GitHub project links
 - Contact links for email, phone, LinkedIn, and GitHub
-
 ## Built With
-
 - HTML5
 - CSS3
 - JavaScript
-
-## Project Structure
-
-```text
-portfolio.html
-README.md
-assets/
-  headshot.jpg
-```
-
 ## Contact
 
 - Email: hasanmustafa1605@gmail.com
