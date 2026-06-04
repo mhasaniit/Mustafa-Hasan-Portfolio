@@ -2218,25 +2218,24 @@
         if (!deleting) {
           titleIndex += 1;
           typedTitle.textContent = titleText.slice(0, titleIndex);
-          if (titleIndex >= titleText.length) {
-            deleting = true;
-            window.setTimeout(typeTitle, 1800);
-            return;
-          }
-          window.setTimeout(typeTitle, titleText[titleIndex - 1] === "." ? 260 : 48);
-        } else {
-          titleIndex -= 1;
-          typedTitle.textContent = titleText.slice(0, titleIndex);
-          if (titleIndex <= 0) {
-            deleting = false;
-            window.setTimeout(typeTitle, 600);
-            return;
-          }
-          window.setTimeout(typeTitle, 24);
-        }
-      };
-      window.setTimeout(typeTitle, 320);
-    }
+        if (titleIndex >= titleText.length) {
+  deleting = true;
+  window.setTimeout(typeTitle, 2400); // was 1800
+  return;
+}
+window.setTimeout(typeTitle, titleText[titleIndex - 1] === "." ? 320 : 60); // was 260 : 48
+} else {
+  titleIndex -= 1;
+  typedTitle.textContent = titleText.slice(0, titleIndex);
+  if (titleIndex <= 0) {
+    deleting = false;
+    window.setTimeout(typeTitle, 1200); // was 600
+    return;
+  }
+  window.setTimeout(typeTitle, 35); // was 24
+}
+};
+window.setTimeout(typeTitle, 320);
 
     const canvas = document.getElementById("tech-canvas");
     const context = canvas.getContext("2d");
