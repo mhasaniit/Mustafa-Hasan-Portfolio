@@ -949,6 +949,82 @@
       font-weight: 900;
     }
 
+    .contact-highlights {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .contact-card {
+      padding: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(4px);
+    }
+
+    .contact-card h4 {
+      margin: 0 0 6px;
+      font-size: 0.95rem;
+      color: #ffffff;
+      letter-spacing: 0.02em;
+    }
+
+    .contact-card p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .contact-card .card-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+      color: #cfe4da;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .contact-card .card-eyebrow::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #6fe2b8;
+      box-shadow: 0 0 0 3px rgba(111, 226, 184, 0.25);
+    }
+
+    .contact-tags {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .contact-tag {
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      background: rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    @media (max-width: 640px) {
+      .contact-highlights {
+        grid-template-columns: 1fr;
+      }
+    }
+
     footer {
       padding: 22px 0;
       background: #111821;
@@ -2039,6 +2115,38 @@
           <p class="section-kicker">Connect / Contact Me</p>
           <h2>Let's connect about cybersecurity, IT operations, or technical opportunities.</h2>
           <p class="section-copy">I am open to internships, hands-on technical roles, cybersecurity projects, IT support opportunities, and robotics or automation work.</p>
+
+          <div class="contact-highlights">
+            <div class="contact-card">
+              <span class="card-eyebrow">Availability</span>
+              <h4>Open for Summer &amp; Fall</h4>
+              <p>Available for internships, co-ops, and part-time technical roles around my coursework at Illinois Tech.</p>
+            </div>
+            <div class="contact-card">
+              <span class="card-eyebrow">Location</span>
+              <h4>Chicago, IL</h4>
+              <p>Based in Chicago and open to on-site, hybrid, or fully remote opportunities across the U.S.</p>
+            </div>
+            <div class="contact-card">
+              <span class="card-eyebrow">Response</span>
+              <h4>Within 24 Hours</h4>
+              <p>I typically reply to email and LinkedIn messages within one business day, often much sooner.</p>
+            </div>
+            <div class="contact-card">
+              <span class="card-eyebrow">Best For</span>
+              <h4>Hands-on Technical Work</h4>
+              <p>Security operations, IT support, networking, scripting, automation, and robotics-adjacent projects.</p>
+            </div>
+          </div>
+
+          <div class="contact-tags" aria-label="Areas of interest">
+            <span class="contact-tag">Cybersecurity</span>
+            <span class="contact-tag">IT Support</span>
+            <span class="contact-tag">Networking</span>
+            <span class="contact-tag">SOC / Monitoring</span>
+            <span class="contact-tag">Python &amp; Automation</span>
+            <span class="contact-tag">Robotics</span>
+          </div>
         </div>
 
         <div class="contact-panel reveal">
